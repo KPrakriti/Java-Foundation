@@ -1,2 +1,13 @@
 Q. What is Java?
 Ans. Java is a cross platform and object oriented programming language.
+
+Q. What are some features of JAVA?
+- Simple programming language
+- Portable - when we run a java prog it gives a byte code - this byte code can be run on linux,windows, macOS or anywhere. It is platform independent programming language
+- Object oriented - everything is considered as an object - that has some state or behaviour
+- Secured - there were issues in some languages with pointers - so when we used pointers the address was accessible which we didn’t want. So such features are removed from java 
+- Dynamic - It supports dynamic memory allocation due to which memory wastage is reduced and the performance of application is increased
+- Distributed - Java allows us to write different methods which are not connected by each other but still you can access different methods. This make java distributed.
+- Robust - strong memory management system and helps in eliminating errors as it checks the code during runtime and compile time
+- Multithreaded - It provided multiple threads of execution. Meaning these threads will run parallelly to each other. This decreases the time of program to run.
+
