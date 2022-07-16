@@ -11,3 +11,19 @@ Q. What are some features of JAVA?
 - Robust - strong memory management system and helps in eliminating errors as it checks the code during runtime and compile time
 - Multithreaded - It provided multiple threads of execution. Meaning these threads will run parallelly to each other. This decreases the time of program to run.
 
+Q. How is a program is executed in Java?
+Ans. First, in Java we have a .java file. This file is given to the javac compiler which converts it to byte code having .class file extension
+     After this the byte code is given to the JVM(Java virtual machine). The classes are loaded there and the the bytecode is verified. The file is then given to the
+     JIT(just in time) which passes it to the Interpreter where the high level code is converted to the machine level code. Lastly, the interpreter gives this
+     machine code to the OS of different platforms like Windows, Linux, MacOS. This is the reason why we can run java code on any platform.
+   
+Q. Lets see a simple Hello world program
+Ans.    Public class Main{                             //Every program in java begins with a class definition. Here Main is class name.The name of the class should be same as the file name when that class is public. You cannot have multiple public class - you can have multiple class - but cannot have multiple public class
+          Public static void main(String[] args)       //this is a method. Every program must have a main method. Main method must be inside the class definition
+         {
+            System.out.prinlt(“Hello world!”);
+         }
+       }
+       
+
+
