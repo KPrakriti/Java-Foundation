@@ -104,3 +104,23 @@ Ans. Scanner by default uses delimiter as space
      In the scanner you can also use sc.useDelimiter(‘ any thing you want’) and that will be used as a delimiter!
 
    
+11. Some Points to remember -
+     1. InputStream & OutputStream are designed for BYTE STREAM. Reader and writer are designed for character stream.
+     2. Every method of OutputStream returns void and throws an IOExeption in case of errors
+     3. Which Scanner class method is used to read string value from the user? --next() & nextLine()
+     4. Consider the following object declaration statement Scanner objectName= new Scanner(System.in); What is System.in in this declaration? - Reference to Input stream
+     5. next() method does not store characters after space.
+     6. What happens if readLine() encounters an error? - It throws an IOException.
+     7. _ _ _ _ _ _ class is used to increase the efficiency of input operations. - 
+     8. Which of these class is not a member class of java.io package? - String
+     9. System class is defined in ? - java.lang package
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
