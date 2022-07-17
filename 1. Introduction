@@ -17,13 +17,13 @@ Ans. First, in Java we have a .java file. This file is given to the javac compil
      JIT(just in time) which passes it to the Interpreter where the high level code is converted to the machine level code. Lastly, the interpreter gives this
      machine code to the OS of different platforms like Windows, Linux, MacOS. This is the reason why we can run java code on any platform.
    
-Q. Lets see a simple Hello world program
-Ans.    Public class Main{                             //Every program in java begins with a class definition. Here Main is class name.The name of the class should be same as the file name when that class is public. You cannot have multiple public class - you can have multiple class - but cannot have multiple public class
-          Public static void main(String[] args)       //this is a method. Every program must have a main method. Main method must be inside the class definition
-         {
-            System.out.prinlt(“Hello world!”);
-         }
-       }
-       
+Q. Some points to remember -
+     1. Objects are stored in heap area of memory.
+     2. JDK includes everything - its the whole package
+     3. JRE is the implementation of JVM, it provides platform to execute java programs.
+     4. JIT optimises bytecode to machine specific language code by compiling similar bytecodes at same time.This reduces overall time taken for compilation of bytecode to machine specific language.
+     5.Compiler does the task of converting code in high level languages to platform independent code.
+     6.JAR stands for Java ARchive. It's a file format based on the popular ZIP file format and is used for aggregating many files into one. Although JAR can be used as a general archiving tool, the primary motivation for its development was so that Java applets and their requisite components 
+     7. Java is not a Low level language.
 
 
