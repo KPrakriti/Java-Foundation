@@ -76,5 +76,27 @@ Ans.  Scanner class is defined in Java.util package. So, whenever we need to use
 
 
 9. Difference between Scanner and Buffered Reader
+   ______________________________________________________________________
+   |Scanner                       | Buffered Reader                     |
+   ______________________________________________________________________
+   |1. Not synchronous            |1. Synchronous                       |
+   ______________________________________________________________________
+   |2. Should be used only in     |2. Should be used in multithreaded   | 
+   |   single threaded case       |   case                              |
+   ______________________________________________________________________
+   |3. little buffer of 1 kb char |3. large buffer of 8 kb byte buffer  |
+   |   char buffer                |                                     |
+   ______________________________________________________________________
+   |4. Scanner is bit slower as   |4. Buffered reader is faster as it   |
+   |   it needs to parse data     |   only reads character stream       |
+   ______________________________________________________________________
+   |5. It has methods like        |5. It has methods like parseInt()    |
+   |   nextint(),nextShort() etc  |   parseShort() etc                  |
+   ______________________________________________________________________
+   |6. Scanner has method         |6. It has methods readLine()         |
+   |   nextLine() to read a line  |   to read a line                    |
+   ______________________________________________________________________
+       
+   
    
    
