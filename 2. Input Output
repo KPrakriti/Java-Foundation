@@ -1,0 +1,41 @@
+1. Public class Main{
+   Public static void main(String[] args)
+     {
+        System.out.prinlt(“Hello world!”);
+     }
+  }
+1. Every program in Java begins with a class definition. Here Main is the name of the class.
+2. The name of the class should be same as the file name when that class is public.
+3. You cannot have multiple public class - you can have multiple class - but cannot have multiple public class.
+4. Public static void main(String[] args) - this is a method
+5. Every program must have a main method
+6. main method must be inside the class definition
+
+
+2. JAVA performs the Input Outpur through streams- 
+
+3. What do you mean by streams?
+Ans. Flow of data from where you can read or write to. 
+      Streams can be of TWO types. 
+      1. Byte Stream
+      2. Character Stream
+      
+4. Difference between Byte Stream and Character Stream
+Ans. ____________________________________________________________
+     | Byte Stream              |   Character Stream            |
+     ____________________________________________________________
+     | 1. Reads 1 byte i.e 8 bit| 1.  Reads 2 byte at a time    |
+     |    at a time.            |     i.e 16 bits.              |
+     | 2. defined using two     | 2. defined using two abstract | 
+     |    class hierarchies     |    classes - reader & writer  |
+     |    Input Stream & Output |                               |
+     |    Stream                |                               |
+     ____________________________________________________________
+     
+5. What is system class?
+Ans. it is a predefined class. It contains functionalities like in, out, err.
+
+6. In how many ways we can read input?
+Ans. There are two ways in whcih you can read input - 
+     1. using Scanner
+     2. using bufferReader
