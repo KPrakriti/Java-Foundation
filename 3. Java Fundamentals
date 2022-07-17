@@ -1,0 +1,27 @@
+1. Variables-
+    It is not possible for anyone to remember the address of each data we store. Thus whenever we store data we give it a name (identifier).
+    Using datatype Operating system allots memory to store any value. When we assign any value to a variable it is called assignment
+    Scope of variable - The part of program in which the variable is accessible is called scope of the program
+    Variable names are case sensitive - var1 is different from vAR1 
+    Variable name must start with a letter, underscore or dollar sign 
+    
+    
+2. Data Type-
+    Data types refers to the types of data stored
+    There are 8 predefined data types in java called primitive data types 
+
+    Byte - used to declare a byte type variable. It can have values from -128 to 127. It takes 8 bit of memory space
+    Short - -32768 to 32767. It takes 16 bit of memory
+    Integer : -2^31 to 2^31 - 1. It takes 32 bit of memory space
+    Long : -2^63 to 2^63 - 1. It takes 64 bit of memory space
+    Float : used to represent decimal numbers. It is precise till approx 6 digits after decimal. Default value is 0.0f
+    Double : used to represent decimal numbers. It is precise till approx 15 digits after decimal. Default value is 0.0. By default all decimal literals are of double type
+    Boolean - used to declare only two values - true and false. Default value is false.
+    Character data types - keyword char is used. Size is 2 bytes. Stored as Ascii values(meaning in forms of characters) in memory. ASCII stands for american standard code for information interchange.
+    Char occupies 16-bit in memory in java, so it supports 2^16 i:e from 0 to 65535
+
+    So when we write char ch = ‘A’ – in memory A’s ascii value will be store i.e 65
+      0 starts with 48
+      a starts with 65
+      A starts with 97
+
