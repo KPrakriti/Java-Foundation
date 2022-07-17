@@ -39,3 +39,39 @@ Ans. it is a predefined class. It contains functionalities like in, out, err.
 Ans. There are two ways in whcih you can read input - 
      1. using Scanner
      2. using bufferReader
+     
+     
+7. How do we read input from the bufferReader?
+Ans. The bufferReader belongs to the Character Stream
+     BufferedReader br = new BufferedReader(new InputStreamReader(System.in))
+     
+     The Bufferedreader accespts character stream 
+     but the System.in takes the byte input
+     
+     The InputStreamReader converts the byte stream to charcter stream and then the data is given to the BufferedReader
+     
+     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+     String read = br.readLine(); //reads a line
+     String readd = br.read(); //reads a character
+
+    
+8. How do we read input from the Scanner?
+Ans.  Scanner class is defined in Java.util package. So, whenever we need to use the Scanner class we have to import it first using import java.util.Scanner;
+      Scanner sc = new Scanner(system.in);
+      int n = sc.nextInt(); //for taking integer input
+      String s = sc.nextLine(); //for taking string input
+      Float f = sc.nextFloat(); 
+      Boolean b = sc.nextBoolean();
+      Long l = sc.nextLongInt();
+      Double d = sc.nextDouble();
+      
+      Notice when you use int n = sc.nextInt() and suppose you have 4 as input 
+      In the next line you want to take an input string so you wrote -
+      String s = sc.nextLine(); 
+      The user gave an input but the result you will see in output screen would be 
+      o/p : 4
+           —-- //blank line 
+      This happened because String s = sc.nextLine(); this statement consumed emptyline/new line as an input and printed that. 
+      So anytime you want to print any string after an int, float, double – use sc.nextLine twice - one to consume the newline and one to consume the actual string input!
+
+
