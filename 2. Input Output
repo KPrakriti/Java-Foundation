@@ -75,3 +75,6 @@ Ans.  Scanner class is defined in Java.util package. So, whenever we need to use
       So anytime you want to print any string after an int, float, double – use sc.nextLine twice - one to consume the newline and one to consume the actual string input!
 
 
+9. Difference between Scanner and Buffered Reader
+   https://github.com/KPrakriti/Java-Foundation/issues/1#issue-1306997673
+   
