@@ -98,5 +98,9 @@ Ans.  Scanner class is defined in Java.util package. So, whenever we need to use
    ______________________________________________________________________
        
    
-   
+10. 
+Ans. Scanner by default uses delimiter as space 
+     So if you are taking two integer inputs from user and they type 23  78 - then automatically 23 will go in int a and 78 in int b 
+     In the scanner you can also use sc.useDelimiter(‘ any thing you want’) and that will be used as a delimiter!
+
    
