@@ -25,3 +25,41 @@
       a starts with 65
       A starts with 97
 
+
+3. Keywords-
+    Keywords are the predefined words - that have special meaning to the compiler. 
+    Example - int, float, boolean, char, float these all are keywords
+    More example - abstract, access, private, public, protected, extends - these are all keywords too
+    The keywords cannot be used as identifiers
+    
+4. Identifiers-
+    Identifiers are the names given to the variables, methods 
+    Identifiers cannot be the keywords 
+    Identifiers are basically the variable name we use
+    
+5. Operators 
+   Types of operators
+    Arithmetic
+    Assignment
+    Relational
+    Logical
+    Unary - increment and decrement operators
+    Bitwise operator
+    
+6. Arithmetic Operators 
+    These include addition (+) , subtraction (-), Multiplication (*) , Division (/) , Modulo (%). 
+    These are binary operators meaning it requires 2 operands to work upon
+
+    Division - when we use a division operator with two integers the output is also integer type.
+    If one of the numerator or denominator is of floating type then the output is also of floating type
+
+    Int b = 5.0/2 will give an error because we are storing double in integer which is not possible. Note that all decimal by default in java are of double type 
+
+    Double b = 5.0/2 – this is correct
+    Float b = 5.0/2 — wrong. 
+    Float b = 5.0f / 2 — correct
+
+
+    
+    
+
