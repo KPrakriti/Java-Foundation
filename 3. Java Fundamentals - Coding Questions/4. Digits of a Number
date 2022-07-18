@@ -1,0 +1,36 @@
+//Pepcoding
+/*
+Algorithm-
+
+1. count the number of digits - this is required because to get the 1st digit of any number we need to divide the number with 10^nod-1. Where nod is no. of digits
+2. Keep dividing the number until the div becomes 0
+*/
+
+import java.util.*;
+    
+    public class Main{
+    
+    public static void main(String[] args) {
+         Scanner sc = new Scanner(System.in);
+         int num = sc.nextInt();
+
+         //step 1 is to count the number of digits
+         int nod = 0;
+         int temp = num;
+         while(temp != 0)
+         {
+           temp = temp/10;
+           nod++;
+         } 
+
+         //step 2 is we have to keep dividing the number with 10^nod-1
+         int div = (int)Math.pow(10,nod-1);
+         while(div != 0)
+         {
+           int q = num/div;
+           System.out.println(q);
+           num = num%div;
+           div = div/10;
+         }
+     }
+    }
