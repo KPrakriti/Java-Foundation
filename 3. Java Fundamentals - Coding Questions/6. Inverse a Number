@@ -1,0 +1,25 @@
+//Pepcoding
+//Inverse of a number 24135 is 14253 - in original number if on index 1 we have 5 then in inversed number we will have 1 on index 5
+import java.util.*;
+
+public class Main{
+
+public static void main(String[] args) {
+  // write your code here
+      Scanner sc = new Scanner(System.in);
+      int num = sc.nextInt();
+      int count = 0;
+      int sum = 0;
+      while(num != 0)
+      {
+        int lastDigit = num%10;
+        count += 1;
+
+        int power = (int)Math.pow(10,lastDigit-1);
+        sum += count*power;
+
+        num /= 10;
+      } 
+      System.out.println(sum); 
+ }
+}
