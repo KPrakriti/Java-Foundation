@@ -1,0 +1,44 @@
+//Pepcoding
+
+import java.util.*;
+   
+   public class Main{
+   
+   public static void main(String[] args) {
+     Scanner sc = new Scanner(System.in);
+      int num = sc.nextInt();
+      int k = sc.nextInt();
+      int rotatedNumber = 0;
+      int count = 0;
+      int temp = num;
+      while(temp != 0)
+      {
+        temp = temp/10;
+        count++;
+      }
+      
+      k = k%count; //for handling large values of K
+      if(k<0) //for negative numbers
+      {
+          k = k+count; 
+      }
+      
+      int div = 1;
+      int mult = 1;
+      for(int i = 1; i<=count; i++)
+      {
+          if(i<=k)
+          {
+              div = div*10;
+          }
+          else
+          {
+              mult = mult*10;
+          }
+      }
+      int rem = num%div;
+      int quo = num/div;
+      rotatedNumber = rem*mult+quo;
+      System.out.println(rotatedNumber);
+    }
+   }
