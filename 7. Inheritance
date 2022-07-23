@@ -1,0 +1,117 @@
+* INHERITANCE
+
+Inheritance is a property of object oriented programing in which one object acquires all properties and behaviour of a parent class.
+The idea of inheritance in java came from you can build new classes based on some existing parent class. Moreover, you can add new methods and fields to your current class. 
+you can also modify any existing method from parent class.
+
+In java, we achieve inheritance using ‘extends’ keyword
+
+Example: we have a class employee
+
+class Employee{
+Int salary;
+String name;
+Public int getSalary();
+}
+
+In the organization we also have programmers for whom we have one additional feature of bonus based on how well they works, but in the employee class I dont have a bonus option.
+Now what can we do?
+
+We can either add a bonus functionality in the employee class but in the employee class all employees of organization are there and bonus is not for everyone
+declaring bonus might go waste for most of the employees in employee class
+
+The next thing that we can do is we can create another class programmer and we copy all current employee class features and add the bonus features, but this is repeating the code again
+
+Here comes inheritance in picture - we can simply inherit the methods and functionalities of employee class in programmer class.
+Hence Inheritance in basically used for code reusability.
+
+Syntax: class programmer extends employee{
+	    int bonus;
+	    public int getbonus();
+	    return bonus;
+}
+
+* METHOD OVERRINDING
+
+Redefining the methods that are there in the parent class. 
+@overrides - this is an annotation in java that we have to give whenever we override a method of parent class.
+@override
+public int getSalary(){
+return salary + bonus;
+}
+
+* SUPER
+
+It is a keyword that is used when we want to inherit a method of a parent class. Remember Super always refers to the parent class.
+syntax: salary = super.getSalary(); //getSalary is a parent class method
+
+Child class can access the methods of parent class but parent class cannot access the methods of child class
+
+Parent class has the power to expose the method only it want to its child class using access modifiers. 
+If any method is private to parent class employee then the child class directly cannot access that method.
+
+*USAGE OF SUPER WITH CONSTRUCTORS
+
+Class Employee{
+String name;
+int salary;
+
+//constructor
+employee(name_ ,salary_){
+this.name = _name;
+this.salary = _salary;
+  }
+}
+
+class Programmer extends Employee{
+int bonus;
+//constructor
+programmer(String name, int salary, int bonus){
+
+//i can use super keyword to access the constructor of parent class
+super(name, salary);
+this.bonus = bonus;
+    }
+  }
+
+* TYPES OF INHERITANCE
+
+1. Single inheritance
+2. Multilevel inheritance
+3. Hierarchical inheritance
+
+* PREVENTION OF INHERITANCE
+
+Final keyword is used to prevent or avoid inheritance
+public final class Employee{ //this class cant be inherited
+}
+
+class Employee{
+Public final getSalary(); //this method cannot be inherited
+}
+
+* MCQs 
+
+Q. Which inheritance in java programming is not supported?
+Ans. Java does not support multiple inheritance of classes but it supports multiple inheritance for interfaces. Means, a class cannot inherit more than one class but it can inherit and implement multiple interfaces.
+
+Q. Order of execution of constructors in Java Inheritance is
+Ans. On object creation of derived class, first base class constructor and then derived class constructor will be called.
+
+Q. Which class cannot be a subclass?
+Ans. Final class cannot be a subclass, meaning, it cannot be extended and we cannot derive any class from it.
+
+Q. Which cannot be inherited from a base class in Java programming?
+Ans. Constructor of a class cannot be inherited. But note that they can be invoked from a derived class. final method can be inherited just they cannot be overridden in subclass.
+
+Q. Java inheritance is used
+Ans. for code reusability and to achieve runtime polymorphism
+
+Q. Which is true?
+Ans. "X extends Y" is correct if X and Y are either both classes or both interfaces
+         
+Q. The concept of Multiple inheritance is implemented in Java by 1. Extending two or more classes 2. Extending one class and implementing one or more interfaces 3. Implementing two or more interfaces.
+Ans. 2 and 3
+
+Q. Which access type data gets derived as private member in derived class:
+Ans. It is a rule, that when a derived class inherits the base class in private access mode, all the members of base class gets derived as private members of the derived class.
