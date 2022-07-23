@@ -1,0 +1,85 @@
+* ENCAPSULATION
+
+It is also known as Information hiding. 
+Encapsulation refers to combining data and behaviour
+together in one package and hiding the implementation
+details from the user of the objects.	
+
+Data is the instance variables that we have for an object.
+Example we had employee class and the variables such as 
+name , salary are the data.
+
+Behaviour is the methods that are there in the objects.
+Example - getSalary() is a behaviour of employee class
+
+Encapsulation example- 
+when we use mobile while making a 
+Call we just tap the call button and we don’t know what's the 
+Implementation behind that button.
+
+ADVANTAGES OF ENCAPSULATION
+1.Control of data
+2.Easy debugging
+3.Data hiding
+
+How do we achieve Encapsulation?
+1. A private data field
+2. A public accessor method (can only access and return)
+3. A public mutator method (can also modify)
+
+Lets see Accessor and Mutator
+	class Employee{
+	   private String name;
+	   private int salary;
+
+	   public int getSalary( ){
+		return salary;
+	     }
+
+	  public String getName( ){
+		return name;
+	     }
+        }
+	
+  we kept the variables name and salary private and created
+	Public methods to access the name and salary because 
+	We do not want any object to modify the name.
+	using the public getSalary and getName methods anyone
+	can access the name and salary.
+
+	//create a mutator method which modifies the salary
+	public int calSalary(){
+	     return 500*salary;
+	}
+
+
+MCQS on ENCAPSULATION
+
+Q. Encapsulation is supported by _ _ _ _ _ _.
+Ans. Classes
+
+Q. Encapsulation helps in writing  _ _ _ _ classes in java?
+Ans. Immutable - it can be created by making the class as final and making all its members private.
+
+Q. How can we achieve Encapsulation in java?
+Ans. using access specifiers
+
+Q. Following concept can be used for encapsulation in java programs
+Ans. wrapping data fields with methods, using interfaces, hiding data and
+Internal methods using access modifiers in a class
+
+Q. which feature can be implemented using encapsulation?
+Ans. Abstraction - Data abstraction can be achieved by using encapsulation. We can hide the operation and structure of actual program 
+     from the user and can show only required information by the user.
+
+Q. In a class, encapsulating an object of another class is called
+Ans. Composition
+
+
+
+
+
+
+
+
+
