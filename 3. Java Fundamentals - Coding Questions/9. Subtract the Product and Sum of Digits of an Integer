@@ -1,0 +1,17 @@
+class Solution {
+    public int subtractProductAndSum(int n) {
+        
+        int sumOfDigits=0;
+        int productOfDigits=1;
+        int diff=0;
+        while(n>0)
+        {
+            int lastDigit=n%10;
+            sumOfDigits += lastDigit;
+            productOfDigits *= lastDigit;
+            n /=10;
+        }
+        diff = productOfDigits-sumOfDigits;
+        return diff;
+    }
+}
