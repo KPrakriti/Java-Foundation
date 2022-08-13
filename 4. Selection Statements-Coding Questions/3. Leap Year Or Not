@@ -1,0 +1,31 @@
+//Prepbytes - https://www.prepbytes.com/panel/mycourses/program-one/java/week/1/decision-making/codingAssignment/LEAP
+
+import java.util.*;
+  import java.io.*;
+  
+  public class Main {
+    public static void main(String args[]) throws IOException {
+      
+      Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		
+		while(t-- > 0)
+		{
+			int year = sc.nextInt();
+			
+			if((year%4 == 0) && (year%100 != 0))
+			{
+				System.out.println("Yes");
+			}
+			else if((year%4 == 0) && (year%100 == 0) && (year%400 == 0))
+			{
+				System.out.println("Yes");
+			}
+			else
+			{
+				System.out.println("No");
+			}
+		}
+      
+    }
+  }
