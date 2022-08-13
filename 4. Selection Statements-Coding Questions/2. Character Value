@@ -1,0 +1,30 @@
+//Prepbytes - https://www.prepbytes.com/panel/mycourses/program-one/java/week/1/decision-making/codingAssignment/CHVAL
+
+import java.util.*;
+  import java.io.*;
+  
+  public class Main {
+    public static void main(String args[]) throws IOException {
+      
+      //write your code here
+      Scanner sc = new Scanner(System.in);
+      char ch = sc.next().charAt(0);
+      
+      if(ch == 'p' || ch == 'P')
+      {
+        System.out.println("PrepBytes");
+      }
+      else if(ch == 'z' || ch == 'Z')
+      {
+        System.out.println("Zenith");
+      }
+      else if(ch == 'e' || ch == 'E')
+      {
+        System.out.println("Expert Coder");
+      }
+      else
+      {
+        System.out.println("Data Structure");
+      }
+    }
+  }
