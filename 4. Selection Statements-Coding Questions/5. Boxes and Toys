@@ -1,0 +1,27 @@
+//Prepbytes
+
+import java.util.*;
+  import java.io.*;
+  
+  public class Main {
+    public static void main(String args[]) throws IOException {
+      
+      //write your code here
+      Scanner sc = new Scanner(System.in);
+      int total_boxes = sc.nextInt();
+      int count_valid_boxes = 0; 
+      while(total_boxes-- > 0)
+      {
+      int ti = sc.nextInt();
+      int ci = sc.nextInt();
+      int total_toys = 2;
+      
+      if(ci - ti >= total_toys)
+        {
+          count_valid_boxes++;
+        }
+      
+      }
+      System.out.println(count_valid_boxes);
+    }
+  }
