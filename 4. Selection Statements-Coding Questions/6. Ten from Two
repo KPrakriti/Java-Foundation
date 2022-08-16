@@ -1,0 +1,29 @@
+//Prepbytes
+
+public class Main {
+    public static void main(String args[]) throws IOException {
+      
+      //write your code here
+      Scanner sc = new Scanner(System.in);
+      int test_cases = sc.nextInt();
+      int count = 0;
+      while(test_cases-- > 0)
+      {
+        int num = sc.nextInt();
+        
+        if(num%10 == 0) //if given num is a multiple of 10 then the result will be 0 
+        {
+          System.out.println(0);
+        }
+        else if(num%10 == 5) //if num is a multiple of 5 then you can multiply it by 2 once to make it a multiple of 10 
+        {
+          System.out.println(1);
+        }
+        else
+        {
+          System.out.println(-1);
+        }
+      }
+      
+    }
+  }
