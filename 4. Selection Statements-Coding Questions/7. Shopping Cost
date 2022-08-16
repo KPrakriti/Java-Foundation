@@ -1,0 +1,36 @@
+//Prepbytes
+
+import java.util.*;
+  import java.io.*;
+  
+  public class Main {
+    public static void main(String args[]) throws IOException {
+      
+      //write your code here
+      Scanner sc = new Scanner(System.in);
+      int testCases = sc.nextInt();
+      
+      while(testCases-->0)
+      {
+        float quantity = sc.nextFloat();
+        float price = sc.nextFloat();
+        float totalPrice = 0.0f;
+        float discountPrice = 0.0f;
+        float finalPrice = 0.0f;
+        if(quantity <= 100)
+        {
+          totalPrice = quantity*price;
+          System.out.printf("%.1f", totalPrice);
+          System.out.println();
+        }
+        else
+        {
+          totalPrice = quantity*price;
+          discountPrice = totalPrice*0.2f;
+          finalPrice = totalPrice - discountPrice;
+          System.out.printf("%.1f", finalPrice);
+          System.out.println();
+        }
+      }
+    }
+  }
