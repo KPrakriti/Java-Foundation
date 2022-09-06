@@ -24,6 +24,6 @@ Q. Some points to remember -
      4. JIT optimises bytecode to machine specific language code by compiling similar bytecodes at same time.This reduces overall time taken for compilation of bytecode to machine specific language.
      5.Compiler does the task of converting code in high level languages to platform independent code.
      6.JAR stands for Java ARchive. It's a file format based on the popular ZIP file format and is used for aggregating many files into one. Although JAR can be used as a general archiving tool, the primary motivation for its development was so that Java applets and their requisite components 
-     7. Java is not a Low level language.
+     7. Java is not a Low level language
 
 
