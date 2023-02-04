@@ -2,7 +2,7 @@
 
    Public static void main(String[] args)
      {
-        System.out.prinlt(“Hello world!”);
+        System.out.println(“Hello world!”);
      }
   }
 1. Every program in Java begins with a class definition. Here Main is the name of the class.
